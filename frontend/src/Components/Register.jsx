@@ -25,7 +25,7 @@ function Register() {
         const handleSubmit=async(e)=>{
             e.preventDefault();
             try{
-                const response=await api.post("/api/auth/register/",form);
+                await api.post("/api/auth/register/",form);
                 setForm({
                 username:"",
                 password1:"",
