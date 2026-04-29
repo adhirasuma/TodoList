@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL:'https://todolist-6be2.onrender.com/',
+  baseURL:process.env.REACT_APP_API_URL,
 });
 
 // request interceptor
