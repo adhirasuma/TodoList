@@ -1,7 +1,4 @@
-# 📝✨ Full Stack Todo List App  
----
-
-## 🌈 Hello coders 👋  # 📓✨ Task Journal
+# 📓✨ Task Journal
 
 > A notebook-inspired full-stack task management application built with React and Django REST Framework.
 
@@ -37,6 +34,52 @@ The application allows users to securely create, update, and manage their daily 
 | ⚙️ Backend  | https://todolist-6be2.onrender.com     |
 
 > ⚠️ Backend is hosted on Render's free tier and may take a few seconds to wake up after inactivity.
+
+---
+
+## 🌙 Dark Mode Experience
+
+<table>
+<tr>
+<td align="center">
+<img src="screenshots/login-dark.png" width="300"><br>
+<b>Login Page</b>
+</td>
+
+<td align="center">
+<img src="screenshots/journal-dark.png" width="300"><br>
+<b>Task Journal</b>
+</td>
+
+<td align="center">
+<img src="screenshots/register-dark.png" width="300"><br>
+<b>Task Management</b>
+</td>
+</tr>
+</table>
+
+---
+
+## ☀️ Light Mode Experience
+
+<table>
+<tr>
+<td align="center">
+<img src="screenshots/login-light.png" width="300"><br>
+<b>Login Page</b>
+</td>
+
+<td align="center">
+<img src="screenshots/journal-light.png" width="300"><br>
+<b>Task Journal</b>
+</td>
+
+<td align="center">
+<img src="screenshots/register-light.png" width="300"><br>
+<b>Task Management</b>
+</td>
+</tr>
+</table>
 
 ---
 
@@ -89,7 +132,6 @@ The application allows users to securely create, update, and manage their daily 
 
 ### Backend
 
-* Django
 * Django REST Framework
 * Simple JWT
 
@@ -204,11 +246,12 @@ This project helped me gain practical experience with:
 
 ## 🔮 Future Improvements
 
-- 🔍 Search & Filter Tasks
-- 📅 Due Dates
-- ⭐ Task Priorities
-- 👤 Profile Settings
-- ☁️ Database Improvements
+* 🔍 Search Tasks
+* 🏷️ Task Categories
+* 📅 Due Dates
+* 📊 Task Statistics
+* ☁️ Cloud Database
+* 👤 User Profile Settings
 
 ---
 
@@ -229,172 +272,3 @@ Every feature was built step by step, and every challenge became a learning oppo
 ✨ Always learning.
 🚀 Always building.
 📖 One task at a time.
-
-
-Welcome to this little corner of code ✨  
-This Todo List app started as a simple idea — just managing tasks — and slowly grew into a full-stack project with authentication, API calls, and real-world logic.
-
-If you're exploring React, Django, or just love building things step by step, you're going to enjoy this 💫  
-
----
-
-
-## 🚀 Overview  
-
-A full-stack Todo List application built with:  
-
-🎨 **React** (frontend)  
-⚙️ **Django REST Framework** (backend)  
-
-It lets users securely manage their tasks with authentication and smooth API interaction 🌿  
-
----
-
-## 🌍 Live Demo  
-
-| Service   | Link |
-|----------|------|
-| 🚀 Frontend | https://simple-todolist-rho.vercel.app |
-| ⚙️ Backend | https://todolist-6be2.onrender.com |
-
-> ⚠️ Backend is hosted on Render (free tier), so first request may take a few seconds due to cold start.
-
----
-## 📸 Application Preview
-
-### 🌙 Dark Mode
-
-<p align="center">
-  <img src="screenshots/login-dark.png" width="30%">
-  <img src="screenshots/journal-dark.png" width="30%">
-  <img src="screenshots/register-dark.png" width="30%">
-</p>
-
-<p align="center">
-  <em>Login • Task Journal • Task Management</em>
-</p>
-
----
-
-### ☀️ Light Mode
-
-<p align="center">
-  <img src="screenshots/login-light.png" width="30%">
-  <img src="screenshots/journal-light.png" width="30%">
-  <img src="screenshots/register-light.png" width="30%">
-</p>
-
-<p align="center">
-  <em>Login • Task Journal • Register</em>
-</p>
-
----
-
-## ✨ Features  
-
-- 🔐 User authentication (Register & Login)  
-- 🔄 Access + refresh token handling  
-- ♻️ Auto token refresh using Axios interceptors  
-- ➕ Add tasks  
-- 🗑️ Delete tasks  
-- ✏️ Edit/update tasks  
-- 📋 View all tasks  
-- 🚫 Protected routes  
-- ⚡ Loading & error handling
-- 🌍 Deployed on Vercel & Render
-
----
-
-## 🛠️ Tech Stack  
-
-**Frontend**  
-🎨 React  
-🔗 Axios  
-💅 CSS  
-
-**Backend**  
-⚙️ Django  
-📡 Django REST Framework  
-🔐 Simple JWT  
-
----
-
-## 📁 Project Structure  
-
-```
-frontend/   → React app 🌐  
-backend/    → Django API ⚙️  
-```
-
----
-
-## ⚙️ Setup  
-
-### 💻 Frontend  
-
-```
-cd frontend  
-npm install  
-npm start  
-```
-
-### 🌐 Environment Variable  
-
-Create a `.env` file in frontend:
-
-REACT_APP_API_URL=http://127.0.0.1:8000
-
-### 🧠 Backend  
-
-```
-cd backend  
-pip install -r requirements.txt  
-python manage.py migrate  
-python manage.py runserver  
-```
-
----
-
-## 🔐 Auth Flow (in simple terms)  
-
-- Login → get tokens 🎟️  
-- Requests use access token 🔑  
-- If expired → auto refresh 🔄  
-- If refresh fails → logout 🚪  
-
-Smooth and automatic ✨  
-
----
-
-## 🌱 What I Learned  
-
-- Connecting frontend ↔ backend 🔗  
-- JWT authentication in real apps 🔐  
-- Axios interceptors ⚡  
-- Managing state & async logic 🧠  
-- Building step by step and improving gradually 🌿  
-
----
-
-## 🔮 Future Ideas  
-
-- 🎨 Better UI/UX  
-- 🔍 Search & filter  
-- 📄 Pagination  
-- ✅ Mark tasks complete  
-- 🌙 Dark mode  
-
----
-
-
-## 👨‍💻 Author  
-
-R.Adhira 🌟
-https://github.com/adhirasuma 
-
----
-
-## 💬 Final Thought  
-
-This project may look simple, but it carries a lot of learning behind it — from basic CRUD to handling authentication flows.  
-Always learning, always improving  🚀  
