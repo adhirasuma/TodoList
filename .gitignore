@@ -28,7 +28,25 @@ node_modules/
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 db.sqlite3
+
+# Django
+media/
+staticfiles/
 
 # virtual environment
 backend/env/
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
