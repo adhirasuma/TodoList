@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Login from './Pages/Login'
 import TodoList from './Pages/TodoList'
 import Register from './Pages/Register'
 import { BrowserRouter,Routes,Route} from 'react-router-dom' 
 import { AnimatePresence } from 'framer-motion'
-
 
 
 function App() {

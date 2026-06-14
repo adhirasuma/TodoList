@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import TextInput from '../Components/TextInput';
 import ButtonB from '../Components/ButtonB';
 import {toast,Toaster} from 'react-hot-toast'
-import { AnimatePresence } from 'framer-motion';
 import PageTransition from '../Components/PageTransition';
 import { FaArrowLeft } from 'react-icons/fa';
 

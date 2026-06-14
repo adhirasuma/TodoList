@@ -13,7 +13,6 @@ import CreateButton from '../Components/CreateButton';
 import LineDiv from '../Components/LineDiv';
 import LogoutButton from '../Components/LogoutButton';
 import { Toaster ,toast } from 'react-hot-toast';
-import {FaTimes} from 'react-icons/fa'
 import PageTransition from '../Components/PageTransition';
 import ThemeButton from '../Components/ThemeButton'
 import { useTheme } from '../Components/ThemeProvider';
@@ -22,13 +21,10 @@ import { useTheme } from '../Components/ThemeProvider';
 function TodoList() {
   let [Todolist,setTodolist]=useState([]);
   let [Task,setTask]=useState("");
-  let [image,setimage]=useState('');
   let [editId, setEditId] = useState(null);
   let [loading,setLoading]=useState(true);
   const { darkMode } = useTheme();
   const navigate=useNavigate();
-  
-  const successnotify=()=>{toast.success('Congrats ! task completed ',{duration:4000,position:"top-right"});}
   const errornotify =(error)=>{toast.error(error,{duration:4000,position:"top-right"});}
 
   const Layout=()=> {
