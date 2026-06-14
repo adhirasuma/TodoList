@@ -204,12 +204,11 @@ This project helped me gain practical experience with:
 
 ## 🔮 Future Improvements
 
-* 🔍 Search Tasks
-* 🏷️ Task Categories
-* 📅 Due Dates
-* 📊 Task Statistics
-* ☁️ Cloud Database
-* 👤 User Profile Settings
+- 🔍 Search & Filter Tasks
+- 📅 Due Dates
+- ⭐ Task Priorities
+- 👤 Profile Settings
+- ☁️ Database Improvements
 
 ---
 
