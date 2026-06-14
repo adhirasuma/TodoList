@@ -1,159 +1,185 @@
-.Display{
+:root{
+  --bg-start: #fff1c1;
+  --bg-end: #ffe5ec;
+  --card-bg: #fffdf7;
+  --text: #2d2d2d;
+  --title: #5A4A3A;
+  --icon-color: #5A4A3A;
+  --divider-color:#D8C3A5;
+  --divider-text:#8B7355;
+  --logo-bg: #fff1c1;
+}
+
+.light-mode{
+  --bg-start: #fff1c1;
+  --bg-end: #ffe5ec;
+  --card-bg: #fffdf7;
+  --text: #2d2d2d;
+  --title: #5A4A3A;
+  --icon-color: #5A4A3A;
+  --divider-color:#D8C3A5;
+  --divider-text:#8B7355;
+  --logo-bg: #fff1c1;
+}
+
+
+.dark-mode{
+  --bg-start: #2B2430;
+  --bg-end: #3F3351;
+  --card-bg: #352F44;
+  --text: #F5F5F5;
+  --title: #FFD89C;
+  --icon-color: #F5F5F5;
+  --divider-color:#6B5B73;
+  --divider-text:#FFD89C;
+  --logo-bg: #fff1c1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #F5F5F5;
+  -webkit-box-shadow: 0 0 0px 1000px #352F44 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.light-mode input:-webkit-autofill,
+.light-mode input:-webkit-autofill:hover,
+.light-mode input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #444;
+  -webkit-box-shadow: 0 0 0px 1000px #fffdf7 inset;
+}
+
+.dark-mode input:-webkit-autofill,
+.dark-mode input:-webkit-autofill:hover,
+.dark-mode input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #F5F5F5;
+  -webkit-box-shadow: 0 0 0px 1000px #352F44 inset;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+  background:
+  linear-gradient(
+    135deg,
+    var(--bg-start),
+    var(--bg-end)
+  );
+  margin:0;
+}
+
+.card-header{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.todo-list{
+  background: var(--card-bg);
+  color: var(--text);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-radius: 5px;
+  padding: 50px;
+  min-height: 500px;
+  margin: 8%;
 }
 
 .card{
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgb(209, 255, 255);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  background: var(--card-bg);
+  color: var(--text);
+  border:1px solid var(--card-bg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  margin: 70px;
+  padding: 4px;
+  gap: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  height: 45vh;
+  margin-top: 100px;
+  min-width: 220px;
+  min-height: fit-content;
 }
 
-.card img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-right: 20px;
+.card-container{
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.model-container {
-    background-color:rgba(0,0 ,0,0.3);
-    display: none;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
+.todo-title{
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--title);
+  animation: slideIn 0.8s ease;
 }
 
-.model{
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0 ,0,0.5);
-    border-radius: 5px;
-    padding: 30px 50px;
-    width:600px;
-    max-width:100%;
-    text-align: center;
-    margin:auto;
-    display: flex;
-    flex-direction: column;
+@keyframes slideIn{
+  from{
+    opacity:0;
+    transform:translateY(-20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
 
-.model h1{
-    margin: 0;
+.logo-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--logo-bg);
+  border-radius: 50%;
+  font-size: 4rem;
+  margin: 0;
+  animation: popIn 0.6s ease;
 }
 
-.model p{
-    font-size: 14px;
-    opacity: 0.7;
+@keyframes popIn{
+  from{
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-
-.card:hover{
-    transform: scale(1.001);
-    padding: 1px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+.title-container{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin: 0;
 }
 
-.Deletebutton{
-    background-color: rgb(255, 0, 85);
-    margin: 10px;
-    color: aliceblue;
-    border: 1px solid rgb(255, 0, 85);
-    padding: 5px;
-}
-.Deletebutton:hover{
-    background-color: red;
+.side-logo-bg{
+  display: flex;
+  background-color: var(--logo-bg);
+  border-radius: 50%;
+  font-size: 2rem;
+  margin: 0;
+  animation: popIn 0.6s ease;
 }
 
-.Newbutton{
-    background-color: orange;
-    margin: 10px;
-    color: aliceblue;
-    border: 1px solid orange;
-    padding: 5px;
-}
-
-.Newbutton:hover{
-    background-color: rgb(255, 166, 0);
-    border: 1px solid orange;
-}
-
-.Editbutton{
-    background-color: rgb(0, 123, 255);
-    margin: 10px;
-    color: aliceblue;
-    border: 1px solid rgb(0, 123, 255);
-    padding: 5px;
-}
-
-.Editbutton:hover{
-    background-color: rgb(0, 100, 255);
-    border: 1px solid rgb(0, 100, 255);
-}
-
-
-.head{
-    font-size: 50px;
-    text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgb(209, 255, 255);
-    border-radius: 10px;
-    padding: 75px;
-    margin: 0px;
-}
-body{
-    background-color: aliceblue;
-}
-
-.LoginCard{
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0 ,0,0.5);
-    border-radius: 5px;
-    padding: 30px 50px;
-    width:600px;
-    max-width:100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.error{
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.message{
-    color: green;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.navbar{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-.search{
-    margin: 10px;
-    padding: 5px;
-    width: 50%;
+@keyframes popIn{
+  from{
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
