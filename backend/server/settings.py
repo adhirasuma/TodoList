@@ -22,7 +22,7 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 ALLOWED_HOSTS = [
-    "https://todolist-6be2.onrender.com",
+    "todolist-6be2.onrender.com",
     "localhost",
     "127.0.0.1",
 ]
@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Application definition
 
